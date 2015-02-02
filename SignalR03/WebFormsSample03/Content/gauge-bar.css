@@ -1,0 +1,21 @@
+﻿.gauge-bar-table 
+{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0px;
+}
+.gauge-bar-completed
+{
+    background-color: #0000ff;
+    height: 20px;
+}
+.gauge-bar-tobedone
+{
+    background-color: #ffffff;
+    height: 20px;
+}
+.gauge-bar-statusline 
+{
+    text-align: center;
+}
