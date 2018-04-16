@@ -1,13 +1,18 @@
-﻿using Microsoft.Owin;
-using Owin;
+﻿using Owin;
+using Microsoft.Owin;
 
-// this namespace is important.
-namespace SignalR01
+[assembly: OwinStartup(typeof(Microsoft.AspNet.SignalR.StockTicker.Startup))]
+
+namespace Microsoft.AspNet.SignalR.StockTicker
 {
-    public static class Startup
+    public class Startup
     {
-        // its name is Configuration and not ConfigureSignalR or anything else.
-        public static void Configuration(IAppBuilder app)
+        public void Configuration(IAppBuilder app)
+        {
+            ConfigureSignalR(app);
+        }
+
+        public static void ConfigureSignalR(IAppBuilder app)
         {
              app.MapSignalR();
         }
