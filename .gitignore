@@ -151,6 +151,7 @@ AppPackages/
 sql/
 *.Cache
 ClientBin/
+.vs/
 [Ss]tyle[Cc]op.*
 ~$*
 *~
@@ -187,3 +188,4 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/.vs
